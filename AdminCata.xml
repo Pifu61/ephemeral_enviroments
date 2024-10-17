@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <EditText
+        android:id="@+id/adminTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/adminYearEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año"
+        android:layout_below="@id/adminTitleEditText"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/adminDirectorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Director"
+        android:layout_below="@id/adminYearEditText"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/adminGenreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Género"
+        android:layout_below="@id/adminDirectorEditText"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/adminSynopsisEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sinopsis"
+        android:layout_below="@id/adminGenreEditText"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/adminImageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL de la imagen"
+        android:layout_below="@id/adminSynopsisEditText"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/addMovieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Película"
+        android:layout_below="@id/adminImageEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/removeMovieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Película"
+        android:layout_below="@id/addMovieButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
